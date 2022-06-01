@@ -1,6 +1,10 @@
 # clocks
 
-These are the files from an art project I worked on at Facebook, with an arist in residence (Elana Schlenker). It's a wall clock that stops ticking when someone looks at it; when the person looks away it ticks 2.5x faster until it catches up to the correct time.
+These are the files from an art project I worked on at Facebook, with an artist in residence (Elana Schlenker). It's a wall clock that stops ticking when someone looks at it; when the person looks away it ticks 2.5x faster until it catches up to the correct time.
+
+You can see a video [here](https://youtu.be/wTJTtdlqP4g):
+
+[![Clock video](https://img.youtube.com/vi/wTJTtdlqP4g/0.jpg)](http://www.youtube.com/watch?v=wTJTtdlqP4g)
 
 It works by running a Python script (`face.py`) on a Raspberry Pi, processing frames from the camera to identify faces. Without any faces the Raspberry Pi will send a voltage signal every second to the clock mechanism, making it tick. When a face is detected the signals accumulate, being sent when there's no longer a face.
 
